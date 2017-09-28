@@ -1,7 +1,7 @@
 #!/bin/bash
 # qing.zou
 
-BUILD_PATH=
+export BUILD_PATH=
 
 function build_path()
 {

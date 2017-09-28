@@ -37,13 +37,6 @@ function premake_init()
     echo "DIR PREMAKE: ${DIR_PREMAKE}"
 }
 
-function premake_make()
-{
-
-    echo "xxxx dir premake: ${dir_premake}"
-    echo " premake make"
-}
-
 function start()
 {
     if [ ! -n "$1" ]; then
@@ -54,5 +47,4 @@ function start()
 }
 
 start $1
-#compile.sh
 
