@@ -223,6 +223,27 @@ typedef enum {
 	ZLOG_LEVEL_DEBUG, buf, buf_len)
 
 
+/* tima log macros */
+#define TIMA_LOGF(format, args...) \
+	dzlog(__FILE__, sizeof(__FILE__)-1, __func__, sizeof(__func__)-1, __LINE__, \
+	ZLOG_LEVEL_FATAL, format, ##args)
+#define TIMA_LOGE(format, args...) \
+	dzlog(__FILE__, sizeof(__FILE__)-1, __func__, sizeof(__func__)-1, __LINE__, \
+	ZLOG_LEVEL_ERROR, format, ##args)
+#define TIMA_LOGW(format, args...) \
+	dzlog(__FILE__, sizeof(__FILE__)-1, __func__, sizeof(__func__)-1, __LINE__, \
+	ZLOG_LEVEL_WARN, format, ##args)
+#define TIMA_LOGN(format, args...) \
+	dzlog(__FILE__, sizeof(__FILE__)-1, __func__, sizeof(__func__)-1, __LINE__, \
+	ZLOG_LEVEL_NOTICE, format, ##args)
+#define TIMA_LOGI(format, args...) \
+	dzlog(__FILE__, sizeof(__FILE__)-1, __func__, sizeof(__func__)-1, __LINE__, \
+	ZLOG_LEVEL_INFO, format, ##args)
+#define TIMA_LOGD(format, args...) \
+	dzlog(__FILE__, sizeof(__FILE__)-1, __func__, sizeof(__func__)-1, __LINE__, \
+	ZLOG_LEVEL_DEBUG, format, ##args)
+
+
 /* vdzlog macros */
 #define vdzlog_fatal(format, args) \
 	vdzlog(__FILE__, sizeof(__FILE__)-1, __func__, sizeof(__func__)-1, __LINE__, \
