@@ -21,9 +21,9 @@ export CC=gcc
 export CXX=g++
 fi
 
-GBASE_INCLUDE="/usr/include"
-GBASE_LIB="/usr/lib"
-GOLBAL_CFLAGS="-I${GBASE_INCLUDE} -I${FINAL_PATH}/include"
-GOLBAL_CPPFLAGS="-I${GBASE_INCLUDE} -I${FINAL_PATH}/include"
-GOLBAL_LDFLAGS="-L${GBASE_LIB} -L${FINAL_PATH}/lib"
+export GBASE_INCLUDE="/usr/include"
+export GBASE_LIB="/usr/lib"
+export GOLBAL_CFLAGS="-I${GBASE_INCLUDE} -I${FINAL_PATH}/include"
+export GOLBAL_CPPFLAGS="-I${GBASE_INCLUDE} -I${FINAL_PATH}/include"
+export GOLBAL_LDFLAGS="-L${GBASE_LIB} -L${FINAL_PATH}/lib"
 
