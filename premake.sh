@@ -46,5 +46,6 @@ function start()
     premake_make ${WORKDIR} 1 true
 }
 
-start $1
+# $1: nt966x/x86, $2: reserved, $3: true/false (make clean)
+start $1 $2 $3
 
