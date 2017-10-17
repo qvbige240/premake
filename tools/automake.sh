@@ -27,6 +27,6 @@ function premake_make()
     fi
 
     if [ -f $1/make_config.sh ]; then
-        $1/make_config.sh
+        $1/make_config.sh ${PLATFORM} $build_clean
     fi
 }

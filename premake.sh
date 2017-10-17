@@ -43,7 +43,7 @@ function start()
         usage_exit
     fi
     premake_init $1
-    premake_make ${WORKDIR}
+    premake_make ${WORKDIR} 1 true
 }
 
 start $1
