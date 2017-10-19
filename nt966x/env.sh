@@ -11,11 +11,11 @@ export PATH=$INSTALLDIR/bin:$PATH
 export TARGETMACH=mipsel-24kec-linux-uclibc
 export BUILDMACH=i686-pc-linux-gnu
 #export BUILDMACH=x86_64-unknown-linux-gnu
-export CROSS=mipsel-24kec-linux-uclibc
-export CC=${CROSS}-gcc
-export LD=${CROSS}-ld
-export AS=${CROSS}-as
-export CXX=${CROSS}-g++
+export CROSS=mipsel-24kec-linux-uclibc-
+export CC=${CROSS}gcc
+export LD=${CROSS}ld
+export AS=${CROSS}as
+export CXX=${CROSS}g++
 
 export GBASE_INCLUDE="/opt/mipsel-24kec-linux-uclibc/usr/mipsel-24kec-linux-uclibc/sysroot/usr/include"
 export GBASE_LIB="/opt/mipsel-24kec-linux-uclibc/usr/mipsel-24kec-linux-uclibc/sysroot/lib"

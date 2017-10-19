@@ -11,11 +11,11 @@ export INSTALLDIR=/opt/timesys/toolchains/i686-linux
 export PATH=$INSTALLDIR/bin:$PATH
 export TARGETMACH=i686-linux
 export BUILDMACH=i686-pc-linux-gnu
-export CROSS=i686-linux
-export CC=${CROSS}-gcc
-export LD=${CROSS}-ld
-export AS=${CROSS}-as
-export CXX=${CROSS}-g++
+export CROSS=i686-linux-
+export CC=${CROSS}gcc
+export LD=${CROSS}ld
+export AS=${CROSS}as
+export CXX=${CROSS}g++
 else
 export CC=gcc
 export CXX=g++
