@@ -7,7 +7,8 @@ export FINAL_PATH=$INSTALL_PATH
 
 # build environment
 export INSTALLDIR=/opt/mipsel-24kec-linux-uclibc/usr
-export PATH=$INSTALLDIR/bin:$PATH
+#export PATH=$INSTALLDIR/bin:$PATH
+export PATH=$PATH:$INSTALLDIR/bin
 export TARGETMACH=mipsel-24kec-linux-uclibc
 export BUILDMACH=i686-pc-linux-gnu
 #export BUILDMACH=x86_64-unknown-linux-gnu
