@@ -1,4 +1,4 @@
-prefix=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/osource/network/nt966x/install_t_test
+prefix=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/work/auto/premake/nt966x/install
 exec_prefix=${prefix}
 includedir=${prefix}/include
 libdir=${prefix}/lib
