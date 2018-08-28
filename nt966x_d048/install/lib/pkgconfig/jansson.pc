@@ -1,0 +1,10 @@
+prefix=/home/zouqing/work/carnet/Mirroring/linux/code/auto/src/../premake/nt966x_d048/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Jansson
+Description: Library for encoding, decoding and manipulating JSON data
+Version: 2.10
+Libs: -L${libdir} -ljansson
+Cflags: -I${includedir}
