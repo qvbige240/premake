@@ -1,7 +1,7 @@
 #!/bin/bash
 # qing.zou
 
-PLATFORM=
+export PLATFORM=
 DIR_PREMAKE=
 
 function premake_dir_set()
