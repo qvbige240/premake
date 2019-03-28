@@ -9,8 +9,8 @@ function usage_exit()
 { 
         echo "  Usge: $0 platform [rebuild]"
         echo "  platform list:"
-        echo -e "\033[32m               nt966x \033[0m"
-        echo -e "\033[32m               x86    \033[0m"
+        echo -e "\033[32m               ubuntu\033[0m"
+        echo -e "\033[32m               centos\033[0m"
         exit -1
 }
 
@@ -60,6 +60,6 @@ function start()
     premake_make ${WORKDIR} 1 true
 }
 
-# $1: nt966x/x86, $2: reserved, $3: true/false (make clean)
+# $1: ubuntu/centos, $2: reserved, $3: true/false (make clean)
 start $1 $2 $3
 
