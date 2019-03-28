@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/work/auto/vmp/3rdpart/../premake/ubuntu/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libevent_openssl
+Description: libevent_openssl adds openssl-based TLS support to libevent
+Version: 2.1.8-stable
+Requires: libevent
+Conflicts:
+Libs: -L${libdir} -levent_openssl
+Libs.private: -lcrypto  -lssl -lcrypto     
+Cflags: -I${includedir}  
+

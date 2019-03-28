@@ -1,0 +1,16 @@
+#libevent pkg-config source file
+
+prefix=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/work/auto/vmp/3rdpart/../premake/ubuntu/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libevent_pthreads
+Description: libevent_pthreads adds pthreads-based threading support to libevent
+Version: 2.1.8-stable
+Requires: libevent
+Conflicts:
+Libs: -L${libdir} -levent_pthreads
+Libs.private: -lcrypto  
+Cflags: -I${includedir} -pthread
+
