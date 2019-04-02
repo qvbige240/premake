@@ -1,0 +1,13 @@
+prefix=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/work/auto/vmp/3rdpart/../premake/ubuntu/install
+exec_prefix=${prefix}
+libdir=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/work/auto/vmp/3rdpart/../premake/ubuntu/install/lib
+incdir=${prefix}/include
+
+Name: librtmp
+Description: RTMP implementation
+Version: v2.4
+Requires: libssl,libcrypto
+URL: http://rtmpdump.mplayerhq.hu
+Libs: -L${libdir} -lrtmp -lz 
+Libs.private: 
+Cflags: -I${incdir}
