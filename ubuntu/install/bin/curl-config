@@ -21,7 +21,7 @@
 #
 ###########################################################################
 
-prefix=/home/zouqing/work/carnet/linux/auto/vmp/3rdpart/../premake/ubuntu/install
+prefix=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/work/auto/vmp/3rdpart/../premake/ubuntu/install
 exec_prefix=${prefix}
 includedir=${prefix}/include
 cppflag_curl_staticlib=
@@ -164,7 +164,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--prefix=/home/zouqing/work/carnet/linux/auto/vmp/3rdpart/../premake/ubuntu/install' '--host=' '--without-zlib' '--without-librtmp' '--disable-symbol-hiding' 'host_alias=' 'CC=gcc'"
+        echo " '--prefix=/media/zouqing/9d0165e6-5910-46c0-9389-cb9a7e7b899b/zouqing/work/auto/vmp/3rdpart/../premake/ubuntu/install' '--host=' '--without-zlib' '--without-librtmp' '--disable-symbol-hiding' 'host_alias=' 'CC=gcc'"
         ;;
 
     *)
