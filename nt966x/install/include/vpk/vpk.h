@@ -24,6 +24,11 @@
 #include "vpk_heap.h"
 #include "vpk_b64.h"
 #include "vpk_crypto.h"
+#include "vpk_sock.h"
+#include "vpk_hash.h"
+#include "vpk_workqueue.h"
+#include "vpk_darray.h"
+#include "vpk_darray_list.h"
 
 TIMA_BEGIN_DELS
 

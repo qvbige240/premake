@@ -13,12 +13,15 @@
 #include <string.h>
 
 #ifdef __cplusplus
-#define TIMA_BEGIN_DELS extern "C" {
-#define TIMA_END_DELS }
+#define VPK_BEGIN_DELS extern "C" {
+#define VPK_END_DELS }
 #else
-#define TIMA_BEGIN_DELS
-#define TIMA_END_DELS
+#define VPK_BEGIN_DELS
+#define VPK_END_DELS
 #endif
+
+#define TIMA_BEGIN_DELS VPK_BEGIN_DELS
+#define TIMA_END_DELS    VPK_END_DELS
 
 #define MAX_PATH_SIZE				256
 #define MAX_ACTION_RECEIVE_SIZE		256
@@ -96,6 +99,10 @@ enum {
 #define	VPK_MEMSET		memset
 #define	VPK_MEMCPY		memcpy
 #define	VPK_REALLOC		realloc
+
+#define SAFE_FREE(p) if(p != NULL) {free(p); p = NULL;}
+
+#define vpk_bcopy(src,dst,sz)	bcopy((src),(dst),(sz))
 
 #define VPKAPI			extern	
 
