@@ -22,7 +22,7 @@ export CXX=g++
 fi
 
 export GBASE_INCLUDE="/usr/include"
-export GBASE_LIB="/usr/lib"
+export GBASE_LIB="/usr/lib/x86_64-linux-gnu"
 export GOLBAL_CFLAGS="-I${GBASE_INCLUDE} -I${FINAL_PATH}/include"
 export GOLBAL_CPPFLAGS="-I${GBASE_INCLUDE} -I${FINAL_PATH}/include"
 export GOLBAL_LDFLAGS="-L${GBASE_LIB} -L${FINAL_PATH}/lib"
