@@ -1,0 +1,12 @@
+prefix=/home/zouqing/work/carnet/linux/auto/premake/x86/install
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+enginesdir=${libdir}/engines-1.1
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 1.1.0d
+Libs: -L${libdir} -lcrypto
+Libs.private: -ldl 
+Cflags: -I${includedir}
