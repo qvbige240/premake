@@ -83,13 +83,13 @@ while test $# -gt 0; do
         ;;
 
     --feature|--features)
-        for feature in SSL IPv6 UnixSockets NTLM NTLM_WB TLS-SRP HTTPS-proxy ""; do
+        for feature in IPv6 UnixSockets ""; do
             test -n "$feature" && echo "$feature"
         done
         ;;
 
     --protocols)
-        for protocol in DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS POP3 POP3S RTSP SMB SMBS SMTP SMTPS TELNET TFTP; do
+        for protocol in DICT FILE FTP GOPHER HTTP IMAP POP3 RTSP SMTP TELNET TFTP; do
             echo "$protocol"
         done
         ;;
@@ -148,7 +148,7 @@ while test $# -gt 0; do
            CURLLIBDIR=""
         fi
         if test "Xno" = "Xyes"; then
-          echo ${CURLLIBDIR}-lcurl -lssl -lcrypto -lssl -lcrypto
+          echo ${CURLLIBDIR}-lcurl 
         else
           echo ${CURLLIBDIR}-lcurl
         fi
@@ -156,7 +156,7 @@ while test $# -gt 0; do
 
     --static-libs)
         if test "Xyes" != "Xno" ; then
-          echo ${exec_prefix}/lib/libcurl.a  -lssl -lcrypto -lssl -lcrypto
+          echo ${exec_prefix}/lib/libcurl.a  
         else
           echo "curl was built with static libraries disabled" >&2
           exit 1
@@ -164,7 +164,7 @@ while test $# -gt 0; do
         ;;
 
     --configure)
-        echo " '--prefix=/home/zouqing/work/carnet/linux/auto/src/../premake/x86/install' '--host=' '--without-zlib' '--without-librtmp' '--disable-symbol-hiding' 'host_alias=' 'CC=gcc'"
+        echo " '--prefix=/home/zouqing/work/carnet/linux/auto/src/../premake/x86/install' '--host=' '--enable-crypto-auth' '--without-zlib' '--without-librtmp' '--disable-symbol-hiding' 'host_alias=' 'CC=gcc'"
         ;;
 
     *)
